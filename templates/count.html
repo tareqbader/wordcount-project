@@ -1,0 +1,15 @@
+<h1>Text Entered :</h1>
+
+{{fulltext}}
+
+<h3><a href="{% url 'home' %}">Return Home</a></h3>
+
+<h2>Number of Words in Text is {{words}} </h2>
+
+<h2>Word count :</h2>
+{% for word, total in wordsorted %}
+
+    {{word}}-{{total}}
+    <br />
+
+{% endfor %}
